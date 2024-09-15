@@ -1,5 +1,38 @@
-ul {
+ul,
+ol {
     font-size: large;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: cursive;
+    background-color: darkgray;
+}
+
+h1 {
+    font-family: cursive;
+    background-color: aliceblue;
+}
+
+img {
+    height: auto;
+    width: 400px;
+}
+
+.ingredients {
+    background-color: rgb(255, 131, 122);
+    color: white;
+    text-align: justify;
+}
+
+.recipe {
+    background-color: bisque;
+    text-align: justify;
+}
+
+.recipe-list {
+    background-color: wheat;
 }
