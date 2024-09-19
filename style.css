@@ -1,38 +1,110 @@
-ul,
-ol {
-    font-size: large;
-    font-weight: 500;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    display: flex; /* added for flexbox layout */
+    flex-direction: column;/* Added to make the body a column */
+    min-height: 100vh;/* added to ensure body takes up full height of the viewport */
 }
 
-h2 {
-    font-size: 24px;
-    font-weight: 300;
-    font-family: cursive;
-    background-color: darkgray;
+header {
+    background-color: black;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
 }
 
-h1 {
-    font-family: cursive;
-    background-color: aliceblue;
+header img.odin-pic {
+    width: auto;
+    height: 150px;
+}
+
+/* header p {
+    margin: 8px 0;
+} */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 8px;
+}
+
+button {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #555; /* Lighter background color on hover */
+    color: #ffcc00; /* Change text color on hover */
+}
+
+
+.hero {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.recipes {
+    padding: 6px 8px;
+    text-align: center;
+}
+
+.recipes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.recipe {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    position: relative;   /* changed from  absolute to relative */
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    flex: 1;/* added to make main content area expand to fill available space */
+
 }
 
 img {
     height: auto;
     width: 400px;
-}
-
-.ingredients {
-    background-color: rgb(255, 131, 122);
-    color: white;
-    text-align: justify;
-}
-
-.recipe {
-    background-color: bisque;
-    text-align: justify;
-}
-
-.recipe-list {
-    background-color: wheat;
 }
